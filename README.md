@@ -5,7 +5,7 @@ A small todo app built with React, TypeScript, Tailwind CSS v4, and Vite.
 - Organize todos into groups: add, rename (double-click), and delete groups
 - Add, complete, edit (double-click), and delete todos in each group
 - Filter every group by all / active / completed; toggle all and clear completed per group
-- Todos and groups persist in `localStorage` (todos saved before groups existed move into a default group)
+- Todos and groups persist in `localStorage` under `todo-groups`; todos saved under the old `todos` key move into a default group
 - Follows the system light/dark preference
 
 ## Getting started
