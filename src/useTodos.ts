@@ -1,23 +1,24 @@
 import { useEffect, useReducer } from 'react'
-import { todosReducer, type Todo } from './todos'
+import { parseStoredState, todosReducer, type TodoState } from './todos'
 
 const STORAGE_KEY = 'todos'
 
-function load(): Todo[] {
+function load(): TodoState {
+  let raw: unknown = null
   try {
-    const raw = localStorage.getItem(STORAGE_KEY)
-    return raw ? (JSON.parse(raw) as Todo[]) : []
+    raw = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? 'null')
   } catch {
-    return []
+    // Corrupt storage falls through to a fresh state.
   }
+  return parseStoredState(raw, () => crypto.randomUUID())
 }
 
 export function useTodos() {
-  const [todos, dispatch] = useReducer(todosReducer, undefined, load)
+  const [state, dispatch] = useReducer(todosReducer, undefined, load)
 
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(todos))
-  }, [todos])
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
+  }, [state])
 
-  return [todos, dispatch] as const
+  return [state, dispatch] as const
 }
