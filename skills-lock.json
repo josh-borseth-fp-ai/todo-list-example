@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "skills": {
+    "abstraction-quality": {
+      "source": "forwardpathai/skills",
+      "sourceType": "github",
+      "skillPath": "abstraction-quality/SKILL.md",
+      "computedHash": "abdc6b287162276ec2de36dcfdc0c707ed1d2c669846508f22366cdbf37b7fb5"
+    },
+    "correctness": {
+      "source": "forwardpathai/skills",
+      "sourceType": "github",
+      "skillPath": "correctness/SKILL.md",
+      "computedHash": "85e786c69703fed1c3b2c4e353e460658f367eaca94f32b53c11eca09594f34b"
+    },
+    "design-patterns": {
+      "source": "forwardpathai/skills",
+      "sourceType": "github",
+      "skillPath": "design-patterns/SKILL.md",
+      "computedHash": "2356fbb8257b32c71dfdea6d3ed8e9efa0bbcad88aac50496195244cc2905b0b"
+    },
+    "duplication": {
+      "source": "forwardpathai/skills",
+      "sourceType": "github",
+      "skillPath": "duplication/SKILL.md",
+      "computedHash": "175c903c829fcbf465f7d4da53cb2820f474386d8ac98ef81bec26de96c67607"
+    },
+    "performance": {
+      "source": "forwardpathai/skills",
+      "sourceType": "github",
+      "skillPath": "performance/SKILL.md",
+      "computedHash": "b097b8c93bf40dc87f8e27ba398159d20f5aa3b62f3e43368a38172d64e97f33"
+    },
+    "security": {
+      "source": "forwardpathai/skills",
+      "sourceType": "github",
+      "skillPath": "security/SKILL.md",
+      "computedHash": "06e8733e40a731c77e2756ca0a03ff37f1a8de01f2337e677cba837aa15d544d"
+    },
+    "test-quality": {
+      "source": "forwardpathai/skills",
+      "sourceType": "github",
+      "skillPath": "test-quality/SKILL.md",
+      "computedHash": "15818b2ad371f0a68bb3095a79c1874d92f1d0e22c8d9368ba2ce3e3b2fc67cf"
+    }
+  }
+}
